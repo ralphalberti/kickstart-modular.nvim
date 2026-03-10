@@ -75,7 +75,12 @@ require('lazy').setup({
   -- test nvim
   -- git commit lazy-lock.json
   checker = { enabled = false },
-
+  -- This helps Lazy notice config file changes efficiently, and paired with disabling the update checker,
+  -- it keeps startup leaner and less noisy
+  change_detection = {
+    enabled = true,
+    notify = false,
+  },
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
