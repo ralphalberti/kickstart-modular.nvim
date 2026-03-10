@@ -69,6 +69,13 @@ require('lazy').setup({
   -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
   -- you can continue same window with `<space>sr` which resumes last telescope search
 }, {
+  -- Disable automatic plugin checking so plugins won't break so often when they change upstream
+  -- When updating plugins, edit lua files, test in nvim, then git commit
+  -- :Lazy update
+  -- test nvim
+  -- git commit lazy-lock.json
+  checker = { enabled = false },
+
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
