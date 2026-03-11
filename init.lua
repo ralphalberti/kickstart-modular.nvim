@@ -95,6 +95,9 @@ vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 require 'options'
+-- try loading the custom.options file
+-- if it doesn't exist, don't error
+pcall(require, 'custom.options')
 
 -- [[ Basic Keymaps ]]
 require 'keymaps'
