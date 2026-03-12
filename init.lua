@@ -101,6 +101,7 @@ pcall(require, 'custom.options')
 
 -- [[ Basic Keymaps ]]
 require 'keymaps'
+pcall(require, 'custom.keymaps')
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'
