@@ -53,7 +53,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
+  -- require 'kickstart.plugins.indent_line', -- I can really remove this line now that I moved indent_line to custom/plugins
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs', -- I can really remove this line now that I moved autopairs to custom/plugins
   -- require 'kickstart.plugins.neo-tree', -- I can really remove this line now that I moved neo-tree to custom/plugins
