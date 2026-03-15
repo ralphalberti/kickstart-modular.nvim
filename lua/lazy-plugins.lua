@@ -52,9 +52,9 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
+  -- require 'kickstart.plugins.debug', -- Wait to move and install this plugin until after I install a Python LSP
   -- require 'kickstart.plugins.indent_line', -- I can really remove this line now that I moved indent_line to custom/plugins
-  -- require 'kickstart.plugins.lint',
+  -- require 'kickstart.plugins.lint', -- I can really remove this line now that I moved lint to custom/plugins
   -- require 'kickstart.plugins.autopairs', -- I can really remove this line now that I moved autopairs to custom/plugins
   -- require 'kickstart.plugins.neo-tree', -- I can really remove this line now that I moved neo-tree to custom/plugins
 
