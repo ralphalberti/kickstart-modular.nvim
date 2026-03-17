@@ -2,12 +2,17 @@
 
 All notable changes to this Neovim configuration will be documented in this file.
 
+## [0.4.0] - 2026-03-16
+
+### Added
+- feat: add python formatting with black via conform.nvim
+- docs: update changelog for python formatting feature
+
 ## [0.3.0] - 2026-03-14
 
 ### Added
 - feat: enable python linting with nvim-lint and ruff
 - docs: update changelog for linting feature
-
 ## [0.2.0] - 2026-03-13
 
 ### Added
