@@ -8,53 +8,81 @@ return {
     },
     keys = {
       {
-        '<F5>',
+        '<leader>dh',
+        function()
+          require('dapui').eval()
+        end,
+        desc = 'Debug: Hover Evaluate',
+      },
+      {
+        '<leader>dc',
         function()
           require('dap').continue()
         end,
-        desc = 'Debug: Start/Continue',
+        desc = 'Debug: Continue',
       },
       {
-        '<F1>',
-        function()
-          require('dap').step_into()
-        end,
-        desc = 'Debug: Step Into',
-      },
-      {
-        '<F2>',
-        function()
-          require('dap').step_over()
-        end,
-        desc = 'Debug: Step Over',
-      },
-      {
-        '<F3>',
-        function()
-          require('dap').step_out()
-        end,
-        desc = 'Debug: Step Out',
-      },
-      {
-        '<leader>b',
+        '<leader>db',
         function()
           require('dap').toggle_breakpoint()
         end,
         desc = 'Debug: Toggle Breakpoint',
       },
       {
-        '<leader>B',
+        '<leader>dB',
         function()
           require('dap').set_breakpoint(vim.fn.input 'Breakpoint condition: ')
         end,
-        desc = 'Debug: Set Breakpoint',
+        desc = 'Debug: Conditional Breakpoint',
       },
       {
-        '<F7>',
+        '<leader>di',
+        function()
+          require('dap').step_into()
+        end,
+        desc = 'Debug: Step Into',
+      },
+      {
+        '<leader>do',
+        function()
+          require('dap').step_over()
+        end,
+        desc = 'Debug: Step Over',
+      },
+      {
+        '<leader>dO',
+        function()
+          require('dap').step_out()
+        end,
+        desc = 'Debug: Step Out',
+      },
+      {
+        '<leader>dr',
+        function()
+          require('dap').repl.open()
+        end,
+        desc = 'Debug: Open REPL',
+      },
+      {
+        '<leader>du',
         function()
           require('dapui').toggle()
         end,
         desc = 'Debug: Toggle UI',
+      },
+      {
+        '<leader>dl',
+        function()
+          require('dap').run_last()
+        end,
+        desc = 'Debug: Run Last',
+      },
+      {
+        '<leader>dq',
+        function()
+          require('dap').terminate()
+        end,
+        desc = 'Debug: Terminate',
       },
       {
         '<leader>dt',
@@ -92,7 +120,8 @@ return {
         },
       }
 
-      require('dap-python').setup(vim.fn.expand '~/.virtualenvs/debugpy/bin/python')
+      -- require('dap-python').setup(vim.fn.expand '~/.virtualenvs/debugpy/bin/python')
+      require('dap-python').setup(vim.fn.expand '~/.venvs/sandbox/bin/python')
 
       dap.listeners.after.event_initialized['dapui_config'] = function()
         dapui.open()
