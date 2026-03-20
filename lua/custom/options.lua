@@ -11,3 +11,8 @@ vim.o.updatetime = 200
 
 -- better command completion
 vim.o.wildmode = 'longest:full,full'
+
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+vim.o.smartindent = true
