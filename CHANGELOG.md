@@ -2,6 +2,24 @@
 
 All notable changes to this Neovim configuration will be documented in this file.
 
+## [0.5.0] - 2026-03-21
+
+### Added
+
+#### Debugging
+
+- Python debugging with `nvim-dap`, `nvim-dap-ui`, and `nvim-dap-python`
+- Debugger keymaps for continue, stepping, breakpoints, REPL, and UI toggle
+- Variable inspection through `dap-ui` and hover evaluation
+
+#### Snippets
+
+- Snippet support with `LuaSnip` and `friendly-snippets`
+- Custom snippet navigation keymaps
+- Custom Python, Lua, HTML, CSS, and JavaScript snippets
+- Advanced Lua-based snippets with choice-node support
+- Starter Django-oriented snippets
+
 ## [0.4.0] - 2026-03-16
 
 ### Added
