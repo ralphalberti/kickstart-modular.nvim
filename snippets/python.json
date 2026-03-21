@@ -1,0 +1,39 @@
+{
+  "Main guard": {
+    "prefix": "ifm",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    $1"
+    ],
+    "description": "Python main guard"
+  },
+  "Print variable": {
+    "prefix": "pv",
+    "body": [
+      "print(\"$1 =\", $1)"
+    ],
+    "description": "Print a variable with a label"
+  },
+  "Django view": {
+    "prefix": "djview",
+    "body": [
+      "from django.shortcuts import render",
+      "",
+      "def ${1:view_name}(request):",
+      "    return render(request, \"${2:app/template.html}\", {",
+      "        \"$3\": $4,",
+      "    })"
+    ],
+    "description": "Basic Django render view"
+  },
+  "Django model": {
+    "prefix": "djmodel",
+    "body": [
+      "from django.db import models",
+      "",
+      "class ${1:ModelName}(models.Model):",
+      "    ${0}"
+    ],
+    "description": "Basic Django model"
+  }
+}

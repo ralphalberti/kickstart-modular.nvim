@@ -1,0 +1,11 @@
+{
+  "Flex center": {
+    "prefix": "flexc",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;"
+    ],
+    "description": "Flexbox center"
+  }
+}

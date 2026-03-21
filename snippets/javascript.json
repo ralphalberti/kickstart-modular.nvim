@@ -1,0 +1,18 @@
+{
+  "Console log": {
+    "prefix": "clg",
+    "body": [
+      "console.log('${1:label}', ${1:variable});"
+    ],
+    "description": "Console log with label"
+  },
+  "Arrow function": {
+    "prefix": "afn",
+    "body": [
+      "const ${1:name} = (${2:args}) => {",
+      "  ${0}",
+      "};"
+    ],
+    "description": "Arrow function"
+  }
+}

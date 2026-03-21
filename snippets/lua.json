@@ -1,0 +1,18 @@
+{
+  "Require module": {
+    "prefix": "req",
+    "body": [
+      "local ${1:module} = require('${1:module}')"
+    ],
+    "description": "Require a Lua module"
+  },
+  "Function": {
+    "prefix": "fn",
+    "body": [
+      "function ${1:name}(${2:args})",
+      "  ${0}",
+      "end"
+    ],
+    "description": "Lua function"
+  }
+}
