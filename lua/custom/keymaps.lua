@@ -23,5 +23,9 @@ vim.api.nvim_create_autocmd('User', {
         no_ignore = true,
       }
     end, { desc = '[S]earch [F]iles (all)' })
+
+    vim.keymap.set('n', '<leader>cl', function()
+      vim.cmd('edit ' .. vim.fn.stdpath 'state' .. '/conform.log')
+    end, { desc = 'Open Conform log' })
   end,
 })
