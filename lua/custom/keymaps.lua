@@ -23,5 +23,13 @@ vim.api.nvim_create_autocmd('User', {
         no_ignore = true,
       }
     end, { desc = '[S]earch [F]iles (all)' })
+
+    vim.keymap.set('n', 'K', function()
+      vim.lsp.buf.hover {
+        border = 'rounded',
+        max_width = 80,
+        max_height = 20,
+      }
+    end, { desc = 'LSP Hover with border' })
   end,
 })
