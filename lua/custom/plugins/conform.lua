@@ -10,7 +10,6 @@ return {
       python = { 'black' },
       lua = { 'stylua' },
       markdown = { 'markdownlint' },
-
       html = { 'prettierd', 'prettier', stop_after_first = true },
       css = { 'prettierd', 'prettier', stop_after_first = true },
       javascript = { 'prettierd', 'prettier', stop_after_first = true },

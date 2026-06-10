@@ -31,5 +31,9 @@ vim.api.nvim_create_autocmd('User', {
         max_height = 20,
       }
     end, { desc = 'LSP Hover with border' })
+
+    vim.keymap.set('n', '<leader>cl', function()
+      vim.cmd('edit ' .. vim.fn.stdpath 'state' .. '/conform.log')
+    end, { desc = 'Open Conform log' })
   end,
 })
